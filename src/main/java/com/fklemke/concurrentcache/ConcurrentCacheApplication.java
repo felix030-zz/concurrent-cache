@@ -9,5 +9,4 @@ public class ConcurrentCacheApplication {
     public static void main(String[] args) {
         SpringApplication.run(ConcurrentCacheApplication.class, args);
     }
-
 }

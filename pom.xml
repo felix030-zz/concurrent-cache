@@ -16,6 +16,9 @@
 
     <properties>
         <java.version>1.8</java.version>
+        <junit-jupiter.version>5.4.0</junit-jupiter.version>
+        <javax-cache.version>1.1.1</javax-cache.version>
+        <hazelcast.version>3.12</hazelcast.version>
     </properties>
 
     <dependencies>
@@ -28,6 +31,31 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>${junit-jupiter.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-junit-jupiter</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.cache</groupId>
+            <artifactId>cache-api</artifactId>
+            <version>${javax-cache.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.hazelcast</groupId>
+            <artifactId>hazelcast-spring</artifactId>
+            <version>${hazelcast.version}</version>
         </dependency>
     </dependencies>
 
